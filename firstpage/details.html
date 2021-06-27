@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WWWineArea</title>
+  <link rel="stylesheet" type="text/css" href="details.css">
+  <link rel="stylesheet" type="text/css" href="firstPage.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
+</head>
+<body onload="loading()">
+  <header>
+    <a href="../firstPage/firstPage.html">
+      <div class="col-lg-6 col-sm-8 col-xs-12" id="title">Welcome to WWWineArea</div>
+    </a>
+  </header>
+  <div id="navBar">
+    <a href="firstPage.html">
+      <div class="heads">Home</div>
+    </a>
+    <a href="../cart/cart.html">
+      <div class="cartImage"></div>
+    </a>
+    <div id="nr-of-prod-in-cart"></div>
+    <a href="../cart/cart.html">
+      <div class="heads">Cosul meu</div>
+    </a>
+    <a href="../admin/admin.html" style="display:flex">
+      <div class="adminImage"></div>
+      <div class="heads">Admin</div>
+    </a>
+  </div>
+  <div class="hidden " id="showAdded">Produsul a fost adaugat in cos.</div>
+  <div id="loading" style="display: none;">
+    <img src="https://firebasestorage.googleapis.com/v0/b/winearea-16fd8.appspot.com/o/giphy.gif?alt=media&token=402da02a-c3e2-439c-804c-59768248b800" alt="">
+  </div>
+  <div id="content" class="">
+
+    <div id="presentationContainer">
+      <div id="image" class="col-lg-6 col-sm-8 col-xs-12">
+        <img src="#" alt="vin">
+      </div>
+      <div id="nameBrandContainer" class="col-xs-12 col-sm-9 col-lg-6">
+        <div id="name"></div>
+        <div id="brand"></div>
+        <div>Vin<span></span></div>
+        <div id="quantity"></div>
+        <div id="price-order">
+          <div id="price"></div>
+          <div style="display:flex">
+            Cantitate <input type="number" name="quantity" min="1" value="1" max="999">
+            <div id="unavailable-product" class="hidden">Produs indisponibil</div>
+          </div>
+          <div id="order"> <button type="text" onclick="addToCart('0')">Cumpara</button></div>
+        </div>
+      </div>
+    </div>
+    <div id="description"></div>
+    <div id="advertising">
+      Advertising
+    </div>
+    <div class="w3-content w3-section" style="max-width:300px">
+
+      <img class="mySlides w3-animate-fading" src="../advertising/wine-adv1.jpg" style="width: 100%; display: block;">
+      <img class="mySlides w3-animate-fading" src="../advertising/wine-adv2.jpg" style="width: 100%; display: none;">
+      <img class="mySlides w3-animate-fading" src="../advertising/wine-adv-3.jpg" style="width: 100%; display: none;">
+      <img class="mySlides w3-animate-fading" src="../advertising/wine-adv4.jpg" style="width: 100%; display: none;">
+      <img class="mySlides w3-animate-fading" src="../advertising/wine-adv5.jpg" style="width: 100%; display: none;">
+    </div>
+<div id="footer" style="
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 50px;
+      background-color: #eee;
+      padding: 71px;
+  ">
+      <div>
+        <h2>Contact</h2>
+
+        <div style="
+      margin-top: 10px;
+  ">Str. Negru Voda, Nr. 105, Giurgiu</div>
+        <div style="
+      margin-top: 10px;
+  ">0768 294 518</div>
+        <div style="
+      margin-top: 10px;
+  ">burcescu.bogdan@yahoo.com</div>
+
+      </div>
+      <div>
+        <h2>Info</h2>
+        <div style="
+      margin-top: 10px;
+  ">
+          About us
+        </div>
+        <div style="
+      margin-top: 10px;
+  ">
+          FAQ
+        </div>
+        <div style="
+      margin-top: 10px;
+  ">
+          Delivery </div>
+      </div>
+</div>
+</div>
+
+<script>
+    let myIndex = 0;
+    advertising();
+
+    function advertising() {
+      let i;
+      let x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(advertising, 8000);
+    }
+</script>
+<script src="details.js"></script>
+</body>
+</html>
