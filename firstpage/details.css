@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+  }
+  
+  body {
+    background-color: #eee;
+  }
+  
+  body > div {
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  
+  #order button:hover {
+    background-color: #6d1015;
+    color:#fff;
+    border: 1px solid #6d1015;
+  }
+  
+  .hidden {
+    display: none;
+  }
+    
+  #price-order input {
+    width:4vw;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 10px;}
+  
+  @media screen and (max-width: 600px) {
+    #price-order input {
+      width:8vw;
+    }
+  }
+  
+  header a {
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    cursor: pointer;
+  }
+  
+  
+  .cartImage {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("https://png.pngtree.com/svg/20161205/b5dbd4fc8b.png")
+  }
+  
+  .adminImage {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("http://simpleicon.com/wp-content/uploads/lock-8.png")
+  }
+  
+  #nr-of-prod-in-cart {
+    margin-left: 6px;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #000000;
+  }
+  
+  .heads {
+    font-size: 13px;
+    color: black;
+    padding-top: 7px;
+    margin: 0 8px;
+  }
+  
+  #navBar a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #navBar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, #fff 20%, #eee100%);
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    color: #383544;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  
+  #showAdded {
+    background: linear-gradient(to top, #48494B 5%, #eee70%);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
+    color: #3D4454;
+  }
+  
+  #image {
+    text-align: center;
+  }
+  
+  #image img {
+    height: 400px;
+    padding-top: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #presentationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header {
+    /* height: 40vh; */
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  #title {
+    background-color: #fff;
+    opacity: 0.7;
+    padding: 1.875rem;
+    line-height: 1.6;
+    font-family: 'Dancing Script', cursive;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.1875rem;
+    transition: transform .6s;
+    box-shadow: 6px 6px 214px 36px rgba(0,0,0,1);
+    margin-top: 40px;
+  
+  }
+  
+  #title:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+    text-shadow: 1px 1px 1px #4c1a2f;
+    box-shadow: inset 2px 2px 104px -51px rgba(0,0,0,1);
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #title {
+      padding: 1rem;
+    }
+  
+    #title:hover {
+      transform: scale(1);
+      text-shadow: 0 0 3px #4c1a2f;
+    }
+  }
+  
+  #nameBrandContainer {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  #name {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  #brand {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #price-order {
+    margin-top: 40px;
+  }
+  
+  #price-order input {
+    max-width: 60px;
+    min-height: 25px;
+    border-radius: 2px;
+    border-width: 1px;
+  }
+  
+  #order button {
+    margin-top: 30px;
+    box-shadow: 3px 4px 0px 0px #fcfcfc;
+    background: linear-gradient(to bottom, #fff 5%, #eee100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba', GradientType=0);
+    background-color: #fff;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: #383544;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 9px 20px;
+    text-decoration: none;
+  }
+  
+  #description {
+    padding: 50px;
+    padding-right: 80px;
+    text-align: justify;
+  }
+  
+  .carousel-cell img {
+    width: 300px;
+  }
+  
+  #advertising {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+  }
+  
+  #unavailable-product {
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+  }
